@@ -1,0 +1,304 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+}
+.body{
+    background-color: #009473;
+}
+.body.anim {
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    background-color: #062d25;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.header_home-icon{
+    width: 80px;
+}
+.header_reg{
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0px 0px 10px #000;
+    font-family: 'Shadows Into Light', cursive;
+}
+.form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 42px auto;
+    color: #fff;
+}
+.form_pole{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 380px;
+    height: 600px;
+    background-color: #035a47;
+    border: 10px ridge #062d25;
+    border-radius: 15px 0 15px 0;
+    padding: 20px;
+}
+.form_label{
+    font-size: 25px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.form_name{
+    background-color: #062d25;
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px 0 5px;
+}
+.form-secondName{
+    background-color: #062d25;
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px 0 5px;
+}
+.form_make{
+    padding: 10px 30px;
+    background-color: #062d25;
+    border-radius: 5px 0 5px;
+    color: #fff;
+}
+.form_make:hover{
+    cursor: pointer;
+}
+.form_make2:hover{
+    cursor: pointer;
+}
+.form_make2{
+    padding: 10px 30px;
+    background-color: #062d25;
+    border-radius: 5px 0 5px;
+    color: #fff;
+}
+.form_date {
+    padding: 10px;
+    background-color: #062d25;
+    border-radius: 5px;
+    color: #fff;
+}
+.form_date:hover{
+    cursor: pointer;
+}
+.form_end {
+    font-family: 'Signika Negative', sans-serif;
+    margin: 20px auto;
+    padding: 20px 35px;
+    font-size: 20px;
+    background-color: #062d25;
+    border-radius: 15px;
+    color: #fff;
+    border: 6px ridge #062d25;
+}
+.form_end:hover{
+    cursor: pointer;
+}
+
+.card {
+    width: 520px;
+    height: 320px;
+    padding: 10px 40px 40px 40px;
+    /* background-color: #300330; */
+    background-image: url(../img/derdromCard.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 10px 15px 25px #000000;
+}
+.card_head{
+    display: flex;
+    align-items :baseline;
+    justify-content: space-between;
+}
+.card_cod{
+    width: 50px;
+    border-radius: 4px;
+    text-shadow: 0px 0px 10px #000;
+}
+.card_credit{
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #fff;
+}
+.card_title{
+    font-size: 35px;
+    font-family: 'Shadows Into Light', cursive;
+}
+.card_number {
+    font-size: 25px;
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 10px #000;
+}
+.card_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card_CW {
+    text-shadow: 0px 0px 10px #000;
+    font-family: 'Signika Negative', sans-serif;
+}
+.card_date {
+    font-family: 'Signika Negative', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #000;
+}
+.card_fullname {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Signika Negative', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.card_name {
+    text-shadow: 0px 0px 10px #000;
+    width: 200px;
+}
+.card_2name {
+    text-shadow: 0px 0px 10px #000;
+    width: 200px;
+}
+.box{
+    height: 1000px;
+    width: 50%;
+    background-color: #300330;
+}
+.box.new{
+    background-color: #fff;
+}
+
+.TEXT{
+    display: none;
+    align-items: center;
+    font-size: 100px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(67, 212, 212, 0.192);
+    opacity: 0;
+    background-color: #009473;
+}
+.anim_ation {
+    margin: auto;
+    width: 350px;
+    animation: Text 1s linear infinite alternate ;
+    transition: 1s;
+} 
+@keyframes Text{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.TEXT.tuck{
+    opacity: 1;
+    display: flex;
+}
+
+@media (max-width: 911px) {
+    .form{
+        flex-direction: column-reverse;
+    }
+    .form_pole {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card {
+        width: 390px;
+        height: 240px;
+    }
+    .card_credit {
+        font-size: 25px;
+    }
+    .card_title {
+        font-size: 28px;
+    }
+    .card_cod {
+        width: 30px;
+    }
+    .card_number {
+        font-size: 20px;
+    }
+    .card_CW, .card_date {
+        font-size: 15px;
+    }
+    .card_name, .card_2name {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 310px;
+        height: 190px;
+    }
+    .card_credit {
+        font-size: 20px;
+    }
+    .card_title {
+        font-size: 22px;
+    }
+    .card_cod {
+        width: 25px;
+    }
+    .card_number {
+        font-size: 15px;
+    }
+    .card_CW, .card_date {
+        font-size: 13px;
+    }
+    .card_name, .card_2name {
+        font-size: 14px;
+    }
+    .form{
+        flex-direction: column;
+    }
+    .form_pole {
+        width: 100%;
+        border-radius: 0;
+        align-items: center;
+        border: 0px;
+        border-top: 10px ridge #062d25;
+        border-bottom: 10px ridge #062d25;
+        margin-top: 10px;
+    }
+    .form_label {
+        font-size: 20px;
+    }
+    .form_end {
+        margin: 20px auto;
+    }
+    .card {
+        margin: 50px auto;
+    }
+}

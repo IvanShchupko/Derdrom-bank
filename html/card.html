@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="../style/card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="../img/-_-.png" type="image/x-icon">
+</head>
+<body class="body">
+    <div class="TEXT">
+        <img class="anim_ation" src="../img/loading.png" alt="">
+    </div>
+
+    <header class="header">
+        <a href="../html/index.html" class="header_home">
+            <img src="../img/-_-.png" alt="" class="header_home-icon">
+        </a>
+        <div class="header_block"></div>
+        <a href="../html/registration.html" class="header_reg">LogIn</a>
+    </header>
+
+
+
+    <form class="form">
+        <div class="form_pole">
+            <label class="form_label">Введіть ваше ім'я</label>
+            <input class="form_name" type="text" placeholder="Name...">
+            
+            <label class="form_label">Введіть ваше призвище</label>
+            <input class="form-secondName" type="text" placeholder="Name...">
+    
+            <label class="form_label">Генерація кода картки</label>
+            <button class="form_make">Генерація</button>
+    
+            <label class="form_label">Згенеруй CW-код картки</label>
+            <button class="form_make2">Генерація</button>
+    
+            <label class="form_label">Час дії картки</label>
+            <input class="form_date" type="date">
+
+            <a href="../html/index.html" class="form_end">Оформити</a>
+        </div>
+        
+
+        <div class="card">
+            <div class="card_head">
+                <h2 class="card_credit">Credit Card</h2>
+                <h2 class="card_title">Derdrom</h2>
+            </div>
+            <img src="../img/cod.png" alt="cod" class="card_cod">
+            <p class="card_number">хххх хххх хххх xххх</p>
+            <div class="card_box">
+                <p class="card_CW">CVV -</p>
+                <p class="card_date">YYYY-MM-DD</p>
+            </div>
+            <div class="card_fullname">
+                <p class="card_name">Ваше ім'я</p>
+                <p class="card_2name">Ваше прізвище</p>
+            </div>
+        </div>
+    </form>
+    <main>
+    </main>
+    <script src="../script/card.js"></script>
+    <script src="../script/anim.js"></script>
+</body>
+</html>

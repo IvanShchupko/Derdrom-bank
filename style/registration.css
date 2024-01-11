@@ -1,0 +1,225 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+}
+.body{
+    background-color: #009473;
+}
+.body.anim {
+    overflow: hidden;;
+}
+h1{
+    color: #003f31;
+    font-size: 50px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.registration{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 600px;
+    background-color: #b6b1b6;
+    border-radius: 0 30px 0 30px;
+    margin: 35px auto;
+    border: 10px ridge #004536;
+    padding-bottom: 50px;
+}
+.registration__username{
+    background-color: #004536;
+    color: #fff;
+    width: 300px;
+    height: 25px;
+    font-size: 25px;
+    padding: 17px 5px;
+    border-radius: 5px 0 5px;
+}
+.registration__email {
+    background-color: #004536;
+    color: #fff;
+    width: 300px;
+    height: 25px;
+    font-size: 25px;
+    padding: 17px 5px;
+    border-radius: 5px 0 5px;
+}
+.registration__password {
+    background-color: #004536;
+    color: #fff;
+    width: 300px;
+    height: 25px;
+    font-size: 25px;
+    padding: 17px 5px;
+    border-radius: 5px 0 5px;
+}
+.registration__tel {
+    background-color: #004536;
+    color: #fff;
+    width: 300px;
+    height: 25px;
+    font-size: 25px;
+    padding: 17px 5px;
+    border-radius: 5px 0 5px;
+}
+.registration__button {
+    background-color: #004536;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px 0 5px;
+}
+.registration__button:hover{
+    cursor: pointer;
+}
+.modal{
+    width: 200px;
+    height: 35px;
+    background-color: #003f31;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 5px;
+    position: fixed;
+    top: 237px;
+    left: -800px;
+    transition: 1s;
+}
+.modal.falseModal{
+    left: 5%;
+}
+.modal2{
+    width: 200px;
+    height: 35px;
+    background-color: #003f31;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 5px;
+    position: fixed;
+    top: 320px;
+    left: -800px;
+    transition: 1s;
+}
+.modal2.falseModal2{
+    left: 5%;
+}
+.modal3{
+    width: 200px;
+    height: 35px;
+    background-color: #003f31;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 5px;
+    position: fixed;
+    top: 413px;
+    left: -800px;
+    transition: 1s;
+}
+.modal3.falseModal3{
+    left: 5%;
+}
+.modal4{
+    width: 200px;
+    height: 35px;
+    background-color: #003f31;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    padding: 5px;
+    position: fixed;
+    top: 506px;
+    left: -800px;
+    transition: 1s;
+}
+.modal4.falseModal4{
+    left: 5%;
+}
+
+.TEXT{
+    display: none;
+    align-items: center;
+    font-size: 100px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(67, 212, 212, 0.192);
+    opacity: 0;
+    background-color: #009473;
+}
+.anim_ation {
+    margin: auto;
+    width: 350px;
+    animation: Text 1s linear infinite alternate ;
+    transition: 1s;
+} 
+@keyframes Text{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.TEXT.tuck{
+    opacity: 1;
+    display: flex;
+}
+
+@media (max-width: 400px) {
+    .registration {
+        width: 90%;
+        font-size: 17px;
+    }
+    .registration__username {
+        width: 80%;
+        font-size: 17px;
+    }
+    .registration__email {
+        width: 80%;
+        font-size: 17px;
+    }
+    .registration__password {
+        width: 80%;
+        font-size: 17px;
+    }
+    .registration__tel {
+        width: 80%;
+        font-size: 17px;
+    }
+    .registration__button {
+        width: 80%;
+        font-size: 17px;
+    }
+    .modal {
+        top: 230px;
+    }
+    .modal2 {
+        top: 313px;
+    }
+    .modal3 {
+        top: 396px;
+    }
+    .modal4 {
+        top: 479px;
+    }
+}
