@@ -98,7 +98,7 @@ main {
     width: 30px;
     height: 31px;
     background-color: #062d19;
-    background-image: url(../img/close.webp);
+    background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/close-icon.png);
     background-size: cover;
 }
 .appli-close:hover {
@@ -246,7 +246,7 @@ main {
     text-align: center;
 
     background-color: #371937;
-    background-image: url(../img/digi.png);
+    background-image: url(https://365.bank//media/r4ral3fp/digi_karta.png);
     background-size: cover;
     padding: 20px;
     color: #fff;
@@ -416,7 +416,7 @@ footer {
 .TEXT.tuck{
     display: flex;
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
 }
 
 
